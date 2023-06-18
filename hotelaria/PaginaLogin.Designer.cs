@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.panelLogin = new System.Windows.Forms.Panel();
-            this.getNome = new System.Windows.Forms.TextBox();
-            this.getSenha = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.getBTentrar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.getSenha = new System.Windows.Forms.TextBox();
+            this.getNome = new System.Windows.Forms.TextBox();
             this.panelLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLogin
             // 
-            this.panelLogin.Controls.Add(this.button1);
+            this.panelLogin.Controls.Add(this.getBTentrar);
             this.panelLogin.Controls.Add(this.label2);
             this.panelLogin.Controls.Add(this.label1);
             this.panelLogin.Controls.Add(this.getSenha);
@@ -49,28 +49,15 @@
             this.panelLogin.Size = new System.Drawing.Size(245, 187);
             this.panelLogin.TabIndex = 0;
             // 
-            // getNome
+            // getBTentrar
             // 
-            this.getNome.Location = new System.Drawing.Point(26, 54);
-            this.getNome.Name = "getNome";
-            this.getNome.Size = new System.Drawing.Size(100, 20);
-            this.getNome.TabIndex = 1;
-            // 
-            // getSenha
-            // 
-            this.getSenha.Location = new System.Drawing.Point(26, 110);
-            this.getSenha.Name = "getSenha";
-            this.getSenha.Size = new System.Drawing.Size(100, 20);
-            this.getSenha.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Associado";
+            this.getBTentrar.Location = new System.Drawing.Point(100, 149);
+            this.getBTentrar.Name = "getBTentrar";
+            this.getBTentrar.Size = new System.Drawing.Size(142, 23);
+            this.getBTentrar.TabIndex = 1;
+            this.getBTentrar.Text = "Entrar";
+            this.getBTentrar.UseVisualStyleBackColor = true;
+            this.getBTentrar.Click += new System.EventHandler(this.getBTentrar_Click);
             // 
             // label2
             // 
@@ -81,14 +68,28 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Senha";
             // 
-            // button1
+            // label1
             // 
-            this.button1.Location = new System.Drawing.Point(100, 149);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Entrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Associado";
+            // 
+            // getSenha
+            // 
+            this.getSenha.Location = new System.Drawing.Point(26, 110);
+            this.getSenha.Name = "getSenha";
+            this.getSenha.Size = new System.Drawing.Size(100, 20);
+            this.getSenha.TabIndex = 2;
+            // 
+            // getNome
+            // 
+            this.getNome.Location = new System.Drawing.Point(26, 71);
+            this.getNome.Name = "getNome";
+            this.getNome.Size = new System.Drawing.Size(100, 20);
+            this.getNome.TabIndex = 1;
             // 
             // PaginaLogin
             // 
@@ -110,11 +111,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panelLogin;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button getBTentrar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox getSenha;
-        private System.Windows.Forms.TextBox getNome;
+        public System.Windows.Forms.TextBox getSenha;
+        public System.Windows.Forms.TextBox getNome;
     }
 }
 
