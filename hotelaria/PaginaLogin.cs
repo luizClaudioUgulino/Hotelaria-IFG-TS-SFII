@@ -22,6 +22,8 @@ namespace hotelaria
         public PaginaLogin()
         {
             InitializeComponent();
+            getNome.Text = "luizugulino";
+            getSenha.Text = "0123";
         }
 
         private void paginaLogin_Load(object sender, EventArgs e)
@@ -41,6 +43,7 @@ namespace hotelaria
                     thread = new Thread(abrirJanela);
                     thread.TrySetApartmentState(ApartmentState.STA);
                     thread.Start();
+                    this.Close();
                 }
                 else
                 {
@@ -103,6 +106,9 @@ namespace hotelaria
             Application.Run(new PaginaPrincipal());
         }
 
+        private void getNome_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

@@ -128,6 +128,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PaginaDiaVigente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaginaDiaVigente.Designer.cs">
+      <DependentUpon>PaginaDiaVigente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaFuturasReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaginaFuturasReservas.Designer.cs">
+      <DependentUpon>PaginaFuturasReservas.cs</DependentUpon>
+    </Compile>
     <Compile Include="PaginaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +154,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PaginaDiaVigente.resx">
+      <DependentUpon>PaginaDiaVigente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaginaFuturasReservas.resx">
+      <DependentUpon>PaginaFuturasReservas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PaginaLogin.resx">
       <DependentUpon>PaginaLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +174,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -182,6 +201,18 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-elina-sazonova-1838554.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cidadelogin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-evie-shaffer-4074444.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

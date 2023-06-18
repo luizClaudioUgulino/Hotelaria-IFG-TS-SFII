@@ -28,48 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.painelNavegacao = new System.Windows.Forms.Panel();
             this.panelNavegadorIcone = new System.Windows.Forms.Panel();
             this.controleReservas = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.painelReservas = new System.Windows.Forms.Panel();
             this.controleCadastro = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.painelCadastros = new System.Windows.Forms.Panel();
             this.ControleChecking = new System.Windows.Forms.Button();
             this.controleCheckout = new System.Windows.Forms.Button();
-            this.B = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.bReservaVigente = new System.Windows.Forms.Button();
+            this.bReservasProximos = new System.Windows.Forms.Button();
+            this.bReservasAnteriores = new System.Windows.Forms.Button();
+            this.bReservasAlterar = new System.Windows.Forms.Button();
+            this.bCadastrarCliente = new System.Windows.Forms.Button();
+            this.bCadastrarQuartos = new System.Windows.Forms.Button();
+            this.painelinferior = new System.Windows.Forms.Panel();
+            this.bFinalizarOperacao = new System.Windows.Forms.Button();
+            this.subjanela = new System.Windows.Forms.Panel();
+            this.painelNavegacao.SuspendLayout();
+            this.painelReservas.SuspendLayout();
+            this.painelCadastros.SuspendLayout();
+            this.painelinferior.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // painelNavegacao
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.controleCheckout);
-            this.panel1.Controls.Add(this.ControleChecking);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.controleCadastro);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.controleReservas);
-            this.panel1.Controls.Add(this.panelNavegadorIcone);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(261, 633);
-            this.panel1.TabIndex = 0;
+            this.painelNavegacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.painelNavegacao.Controls.Add(this.controleCheckout);
+            this.painelNavegacao.Controls.Add(this.ControleChecking);
+            this.painelNavegacao.Controls.Add(this.painelCadastros);
+            this.painelNavegacao.Controls.Add(this.controleCadastro);
+            this.painelNavegacao.Controls.Add(this.painelReservas);
+            this.painelNavegacao.Controls.Add(this.controleReservas);
+            this.painelNavegacao.Controls.Add(this.panelNavegadorIcone);
+            this.painelNavegacao.Dock = System.Windows.Forms.DockStyle.Left;
+            this.painelNavegacao.Location = new System.Drawing.Point(0, 0);
+            this.painelNavegacao.Name = "painelNavegacao";
+            this.painelNavegacao.Size = new System.Drawing.Size(261, 633);
+            this.painelNavegacao.TabIndex = 0;
             // 
             // panelNavegadorIcone
             // 
-            this.panelNavegadorIcone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelNavegadorIcone.BackColor = System.Drawing.Color.Salmon;
             this.panelNavegadorIcone.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelNavegadorIcone.Location = new System.Drawing.Point(0, 0);
             this.panelNavegadorIcone.Name = "panelNavegadorIcone";
@@ -78,6 +78,7 @@
             // 
             // controleReservas
             // 
+            this.controleReservas.BackColor = System.Drawing.Color.Transparent;
             this.controleReservas.Dock = System.Windows.Forms.DockStyle.Top;
             this.controleReservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.controleReservas.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -90,20 +91,21 @@
             this.controleReservas.TabIndex = 2;
             this.controleReservas.Text = "Reservas";
             this.controleReservas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.controleReservas.UseVisualStyleBackColor = true;
+            this.controleReservas.UseVisualStyleBackColor = false;
+            this.controleReservas.Click += new System.EventHandler(this.controleReservas_Click_1);
             // 
-            // panel2
+            // painelReservas
             // 
-            this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.B);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 162);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(261, 100);
-            this.panel2.TabIndex = 3;
+            this.painelReservas.BackColor = System.Drawing.Color.Transparent;
+            this.painelReservas.Controls.Add(this.bReservasAlterar);
+            this.painelReservas.Controls.Add(this.bReservasAnteriores);
+            this.painelReservas.Controls.Add(this.bReservasProximos);
+            this.painelReservas.Controls.Add(this.bReservaVigente);
+            this.painelReservas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.painelReservas.Location = new System.Drawing.Point(0, 162);
+            this.painelReservas.Name = "painelReservas";
+            this.painelReservas.Size = new System.Drawing.Size(261, 165);
+            this.painelReservas.TabIndex = 3;
             // 
             // controleCadastro
             // 
@@ -112,7 +114,7 @@
             this.controleCadastro.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.controleCadastro.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.controleCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.controleCadastro.Location = new System.Drawing.Point(0, 262);
+            this.controleCadastro.Location = new System.Drawing.Point(0, 327);
             this.controleCadastro.Name = "controleCadastro";
             this.controleCadastro.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.controleCadastro.Size = new System.Drawing.Size(261, 65);
@@ -120,17 +122,18 @@
             this.controleCadastro.Text = "Cadastros";
             this.controleCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.controleCadastro.UseVisualStyleBackColor = true;
+            this.controleCadastro.Click += new System.EventHandler(this.controleCadastro_Click_1);
             // 
-            // panel3
+            // painelCadastros
             // 
-            this.panel3.BackColor = System.Drawing.Color.Silver;
-            this.panel3.Controls.Add(this.button6);
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 327);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(261, 51);
-            this.panel3.TabIndex = 5;
+            this.painelCadastros.BackColor = System.Drawing.Color.Transparent;
+            this.painelCadastros.Controls.Add(this.bCadastrarQuartos);
+            this.painelCadastros.Controls.Add(this.bCadastrarCliente);
+            this.painelCadastros.Dock = System.Windows.Forms.DockStyle.Top;
+            this.painelCadastros.Location = new System.Drawing.Point(0, 392);
+            this.painelCadastros.Name = "painelCadastros";
+            this.painelCadastros.Size = new System.Drawing.Size(261, 79);
+            this.painelCadastros.TabIndex = 5;
             // 
             // ControleChecking
             // 
@@ -139,7 +142,7 @@
             this.ControleChecking.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ControleChecking.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.ControleChecking.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ControleChecking.Location = new System.Drawing.Point(0, 378);
+            this.ControleChecking.Location = new System.Drawing.Point(0, 471);
             this.ControleChecking.Name = "ControleChecking";
             this.ControleChecking.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.ControleChecking.Size = new System.Drawing.Size(261, 62);
@@ -147,6 +150,7 @@
             this.ControleChecking.Text = "Checking";
             this.ControleChecking.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ControleChecking.UseVisualStyleBackColor = true;
+            this.ControleChecking.Click += new System.EventHandler(this.ControleChecking_Click);
             // 
             // controleCheckout
             // 
@@ -155,7 +159,7 @@
             this.controleCheckout.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.controleCheckout.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.controleCheckout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.controleCheckout.Location = new System.Drawing.Point(0, 440);
+            this.controleCheckout.Location = new System.Drawing.Point(0, 533);
             this.controleCheckout.Name = "controleCheckout";
             this.controleCheckout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.controleCheckout.Size = new System.Drawing.Size(261, 62);
@@ -164,152 +168,160 @@
             this.controleCheckout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.controleCheckout.UseVisualStyleBackColor = true;
             // 
-            // B
+            // bReservaVigente
             // 
-            this.B.Dock = System.Windows.Forms.DockStyle.Top;
-            this.B.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B.Location = new System.Drawing.Point(0, 0);
-            this.B.Name = "B";
-            this.B.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.B.Size = new System.Drawing.Size(261, 23);
-            this.B.TabIndex = 0;
-            this.B.Text = "Reservas Vigente";
-            this.B.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.B.UseVisualStyleBackColor = true;
+            this.bReservaVigente.BackColor = System.Drawing.Color.Transparent;
+            this.bReservaVigente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bReservaVigente.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bReservaVigente.Location = new System.Drawing.Point(0, 0);
+            this.bReservaVigente.Name = "bReservaVigente";
+            this.bReservaVigente.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.bReservaVigente.Size = new System.Drawing.Size(261, 40);
+            this.bReservaVigente.TabIndex = 0;
+            this.bReservaVigente.Text = "Reservas Vigente";
+            this.bReservaVigente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bReservaVigente.UseVisualStyleBackColor = false;
+            this.bReservaVigente.Click += new System.EventHandler(this.bReservaVigente_Click);
             // 
-            // button2
+            // bReservasProximos
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(0, 23);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(261, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Proximas Reservas";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
+            this.bReservasProximos.BackColor = System.Drawing.Color.Transparent;
+            this.bReservasProximos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bReservasProximos.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bReservasProximos.Location = new System.Drawing.Point(0, 40);
+            this.bReservasProximos.Name = "bReservasProximos";
+            this.bReservasProximos.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.bReservasProximos.Size = new System.Drawing.Size(261, 40);
+            this.bReservasProximos.TabIndex = 1;
+            this.bReservasProximos.Text = "Proximas Reservas";
+            this.bReservasProximos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bReservasProximos.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // bReservasAnteriores
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(0, 46);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(261, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Reservas Anteriores";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
+            this.bReservasAnteriores.BackColor = System.Drawing.Color.Transparent;
+            this.bReservasAnteriores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bReservasAnteriores.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bReservasAnteriores.Location = new System.Drawing.Point(0, 80);
+            this.bReservasAnteriores.Name = "bReservasAnteriores";
+            this.bReservasAnteriores.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.bReservasAnteriores.Size = new System.Drawing.Size(261, 40);
+            this.bReservasAnteriores.TabIndex = 2;
+            this.bReservasAnteriores.Text = "Reservas Anteriores";
+            this.bReservasAnteriores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bReservasAnteriores.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // bReservasAlterar
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(0, 69);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(261, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Alterar Reservas";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
+            this.bReservasAlterar.BackColor = System.Drawing.Color.Transparent;
+            this.bReservasAlterar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bReservasAlterar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bReservasAlterar.Location = new System.Drawing.Point(0, 120);
+            this.bReservasAlterar.Name = "bReservasAlterar";
+            this.bReservasAlterar.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.bReservasAlterar.Size = new System.Drawing.Size(261, 40);
+            this.bReservasAlterar.TabIndex = 3;
+            this.bReservasAlterar.Text = "Alterar Reservas";
+            this.bReservasAlterar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bReservasAlterar.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // bCadastrarCliente
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(261, 23);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Cadastrar Cliente";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
+            this.bCadastrarCliente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bCadastrarCliente.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bCadastrarCliente.Location = new System.Drawing.Point(0, 0);
+            this.bCadastrarCliente.Name = "bCadastrarCliente";
+            this.bCadastrarCliente.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.bCadastrarCliente.Size = new System.Drawing.Size(261, 40);
+            this.bCadastrarCliente.TabIndex = 1;
+            this.bCadastrarCliente.Text = "Cadastrar Cliente";
+            this.bCadastrarCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bCadastrarCliente.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // bCadastrarQuartos
             // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(0, 23);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(261, 23);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Cadastrar Quartos";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = true;
+            this.bCadastrarQuartos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bCadastrarQuartos.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bCadastrarQuartos.Location = new System.Drawing.Point(0, 40);
+            this.bCadastrarQuartos.Name = "bCadastrarQuartos";
+            this.bCadastrarQuartos.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.bCadastrarQuartos.Size = new System.Drawing.Size(261, 40);
+            this.bCadastrarQuartos.TabIndex = 2;
+            this.bCadastrarQuartos.Text = "Cadastrar Quartos";
+            this.bCadastrarQuartos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bCadastrarQuartos.UseVisualStyleBackColor = true;
             // 
-            // panel4
+            // painelinferior
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(261, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1154, 604);
-            this.panel4.TabIndex = 2;
+            this.painelinferior.BackColor = System.Drawing.Color.Salmon;
+            this.painelinferior.Controls.Add(this.bFinalizarOperacao);
+            this.painelinferior.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.painelinferior.Location = new System.Drawing.Point(261, 604);
+            this.painelinferior.Name = "painelinferior";
+            this.painelinferior.Size = new System.Drawing.Size(1154, 29);
+            this.painelinferior.TabIndex = 3;
             // 
-            // panel5
+            // bFinalizarOperacao
             // 
-            this.panel5.BackColor = System.Drawing.Color.RosyBrown;
-            this.panel5.Controls.Add(this.button1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(261, 604);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1154, 29);
-            this.panel5.TabIndex = 3;
+            this.bFinalizarOperacao.BackColor = System.Drawing.Color.IndianRed;
+            this.bFinalizarOperacao.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.bFinalizarOperacao.Location = new System.Drawing.Point(940, 3);
+            this.bFinalizarOperacao.Name = "bFinalizarOperacao";
+            this.bFinalizarOperacao.Size = new System.Drawing.Size(202, 23);
+            this.bFinalizarOperacao.TabIndex = 0;
+            this.bFinalizarOperacao.Text = "Fechar Operação";
+            this.bFinalizarOperacao.UseVisualStyleBackColor = false;
+            this.bFinalizarOperacao.Click += new System.EventHandler(this.bFinalizarOperacao_Click);
             // 
-            // button1
+            // subjanela
             // 
-            this.button1.BackColor = System.Drawing.Color.IndianRed;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Location = new System.Drawing.Point(949, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(202, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Fechar Operação";
-            this.button1.UseVisualStyleBackColor = false;
+            this.subjanela.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.subjanela.Cursor = System.Windows.Forms.Cursors.Default;
+            this.subjanela.Location = new System.Drawing.Point(267, 3);
+            this.subjanela.Name = "subjanela";
+            this.subjanela.Size = new System.Drawing.Size(1148, 598);
+            this.subjanela.TabIndex = 4;
+            this.subjanela.Tag = "subJanela";
             // 
             // PaginaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1415, 633);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.subjanela);
+            this.Controls.Add(this.painelinferior);
+            this.Controls.Add(this.painelNavegacao);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PaginaPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PaginaPrincipal";
             this.Load += new System.EventHandler(this.PaginaPrincipal_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
+            this.painelNavegacao.ResumeLayout(false);
+            this.painelReservas.ResumeLayout(false);
+            this.painelCadastros.ResumeLayout(false);
+            this.painelinferior.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel painelNavegacao;
         private System.Windows.Forms.Panel panelNavegadorIcone;
         private System.Windows.Forms.Button ControleChecking;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel painelCadastros;
         private System.Windows.Forms.Button controleCadastro;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel painelReservas;
         private System.Windows.Forms.Button controleReservas;
         private System.Windows.Forms.Button controleCheckout;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button B;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bCadastrarQuartos;
+        private System.Windows.Forms.Button bCadastrarCliente;
+        private System.Windows.Forms.Button bReservasAlterar;
+        private System.Windows.Forms.Button bReservasAnteriores;
+        private System.Windows.Forms.Button bReservasProximos;
+        private System.Windows.Forms.Button bReservaVigente;
+        private System.Windows.Forms.Panel painelinferior;
+        private System.Windows.Forms.Button bFinalizarOperacao;
+        private System.Windows.Forms.Panel subjanela;
     }
 }
