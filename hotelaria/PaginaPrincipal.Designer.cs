@@ -82,6 +82,7 @@
             this.controleCheckout.Text = "Checkout";
             this.controleCheckout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.controleCheckout.UseVisualStyleBackColor = true;
+            this.controleCheckout.Click += new System.EventHandler(this.controleCheckout_Click);
             // 
             // ControleChecking
             // 
@@ -198,6 +199,7 @@
             this.bReservasAnteriores.Text = "Reservas Anteriores";
             this.bReservasAnteriores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bReservasAnteriores.UseVisualStyleBackColor = false;
+            this.bReservasAnteriores.Click += new System.EventHandler(this.bReservasAnteriores_Click);
             // 
             // bReservasProximos
             // 

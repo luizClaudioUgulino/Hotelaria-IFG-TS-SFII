@@ -123,5 +123,17 @@ namespace hotelaria
             esconderMenu();
             abrirSubJanela(new PaginaFuturasReservas());
         }
+
+        private void controleCheckout_Click(object sender, EventArgs e)
+        {
+            esconderMenu();
+            abrirSubJanela(new PaginaCheckout());
+        }
+
+        private void bReservasAnteriores_Click(object sender, EventArgs e)
+        {
+            esconderMenu();
+            abrirSubJanela(new PaginaReservasAnteriores());
+        }
     }
 }
