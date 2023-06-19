@@ -141,5 +141,11 @@ namespace hotelaria
             esconderMenu();
             abrirSubJanela(new PaginaAlterarReserva());
         }
+
+        private void bCadastrarCliente_Click(object sender, EventArgs e)
+        {
+            esconderMenu();
+            abrirSubJanela(new PaginaCadastroCliente());
+        }
     }
 }

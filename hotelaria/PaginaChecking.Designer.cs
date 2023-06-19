@@ -351,6 +351,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PaginaChecking";
             this.Text = "PaginaChecking";
+            this.Load += new System.EventHandler(this.PaginaChecking_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

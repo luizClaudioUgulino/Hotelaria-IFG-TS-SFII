@@ -114,6 +114,7 @@
             // 
             // bCadastrarQuartos
             // 
+            this.bCadastrarQuartos.BackColor = System.Drawing.Color.White;
             this.bCadastrarQuartos.Dock = System.Windows.Forms.DockStyle.Top;
             this.bCadastrarQuartos.Font = new System.Drawing.Font("Arial", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bCadastrarQuartos.ForeColor = System.Drawing.Color.Salmon;
@@ -124,10 +125,11 @@
             this.bCadastrarQuartos.TabIndex = 2;
             this.bCadastrarQuartos.Text = "Cadastrar Quartos";
             this.bCadastrarQuartos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bCadastrarQuartos.UseVisualStyleBackColor = true;
+            this.bCadastrarQuartos.UseVisualStyleBackColor = false;
             // 
             // bCadastrarCliente
             // 
+            this.bCadastrarCliente.BackColor = System.Drawing.Color.White;
             this.bCadastrarCliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.bCadastrarCliente.Font = new System.Drawing.Font("Arial", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bCadastrarCliente.ForeColor = System.Drawing.Color.Salmon;
@@ -138,7 +140,8 @@
             this.bCadastrarCliente.TabIndex = 1;
             this.bCadastrarCliente.Text = "Cadastrar Cliente";
             this.bCadastrarCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bCadastrarCliente.UseVisualStyleBackColor = true;
+            this.bCadastrarCliente.UseVisualStyleBackColor = false;
+            this.bCadastrarCliente.Click += new System.EventHandler(this.bCadastrarCliente_Click);
             // 
             // controleCadastro
             // 
@@ -172,7 +175,7 @@
             // 
             // bReservasAlterar
             // 
-            this.bReservasAlterar.BackColor = System.Drawing.Color.Transparent;
+            this.bReservasAlterar.BackColor = System.Drawing.Color.White;
             this.bReservasAlterar.Dock = System.Windows.Forms.DockStyle.Top;
             this.bReservasAlterar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bReservasAlterar.ForeColor = System.Drawing.Color.Salmon;
@@ -188,7 +191,7 @@
             // 
             // bReservasAnteriores
             // 
-            this.bReservasAnteriores.BackColor = System.Drawing.Color.Transparent;
+            this.bReservasAnteriores.BackColor = System.Drawing.Color.White;
             this.bReservasAnteriores.Dock = System.Windows.Forms.DockStyle.Top;
             this.bReservasAnteriores.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bReservasAnteriores.ForeColor = System.Drawing.Color.Salmon;
@@ -204,7 +207,7 @@
             // 
             // bReservasProximos
             // 
-            this.bReservasProximos.BackColor = System.Drawing.Color.Transparent;
+            this.bReservasProximos.BackColor = System.Drawing.Color.White;
             this.bReservasProximos.Dock = System.Windows.Forms.DockStyle.Top;
             this.bReservasProximos.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bReservasProximos.ForeColor = System.Drawing.Color.Salmon;
@@ -220,7 +223,7 @@
             // 
             // bReservaVigente
             // 
-            this.bReservaVigente.BackColor = System.Drawing.Color.Transparent;
+            this.bReservaVigente.BackColor = System.Drawing.Color.White;
             this.bReservaVigente.Dock = System.Windows.Forms.DockStyle.Top;
             this.bReservaVigente.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bReservaVigente.ForeColor = System.Drawing.Color.Salmon;
@@ -286,8 +289,9 @@
             // subjanela
             // 
             this.subjanela.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.subjanela.BackColor = System.Drawing.Color.White;
             this.subjanela.Cursor = System.Windows.Forms.Cursors.Default;
-            this.subjanela.Location = new System.Drawing.Point(267, 3);
+            this.subjanela.Location = new System.Drawing.Point(261, 3);
             this.subjanela.Name = "subjanela";
             this.subjanela.Size = new System.Drawing.Size(1148, 598);
             this.subjanela.TabIndex = 4;

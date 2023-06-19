@@ -224,5 +224,10 @@ namespace hotelaria
         {
             limparCampos();
         }
+
+        private void PaginaChecking_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

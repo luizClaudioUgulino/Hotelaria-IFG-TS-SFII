@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaginaLogin));
             this.panelLogin = new System.Windows.Forms.Panel();
             this.getBTentrar = new System.Windows.Forms.Button();
             this.getSenha = new System.Windows.Forms.TextBox();
@@ -111,7 +112,7 @@
             // PaginaLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = global::hotelaria.Properties.Resources.pexels_evie_shaffer_4074444;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(851, 394);
             this.Controls.Add(this.label1);
