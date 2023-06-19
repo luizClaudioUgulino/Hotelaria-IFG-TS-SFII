@@ -184,6 +184,7 @@
             this.bReservasAlterar.Text = "Alterar Reservas";
             this.bReservasAlterar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bReservasAlterar.UseVisualStyleBackColor = false;
+            this.bReservasAlterar.Click += new System.EventHandler(this.bReservasAlterar_Click);
             // 
             // bReservasAnteriores
             // 
