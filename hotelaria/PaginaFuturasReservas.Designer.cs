@@ -34,8 +34,13 @@
             this.bLimpar = new System.Windows.Forms.Button();
             this.bAtualizar = new System.Windows.Forms.Button();
             this.listView = new System.Windows.Forms.ListView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.getdia = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.getmes = new System.Windows.Forms.TextBox();
+            this.getano = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -85,6 +90,7 @@
             this.bAtualizar.TabIndex = 9;
             this.bAtualizar.Text = "Atualizar";
             this.bAtualizar.UseVisualStyleBackColor = true;
+            this.bAtualizar.Click += new System.EventHandler(this.bAtualizar_Click);
             // 
             // listView
             // 
@@ -95,14 +101,14 @@
             this.listView.TabIndex = 8;
             this.listView.UseCompatibleStateImageBehavior = false;
             // 
-            // textBox1
+            // getdia
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Tomato;
-            this.textBox1.ForeColor = System.Drawing.Color.Snow;
-            this.textBox1.Location = new System.Drawing.Point(257, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 15;
+            this.getdia.BackColor = System.Drawing.Color.Tomato;
+            this.getdia.ForeColor = System.Drawing.Color.Snow;
+            this.getdia.Location = new System.Drawing.Point(257, 53);
+            this.getdia.Name = "getdia";
+            this.getdia.Size = new System.Drawing.Size(48, 20);
+            this.getdia.TabIndex = 15;
             // 
             // label3
             // 
@@ -115,13 +121,69 @@
             this.label3.TabIndex = 16;
             this.label3.Text = "SELECIONE PELO ID DO RESERVA";
             // 
+            // getmes
+            // 
+            this.getmes.BackColor = System.Drawing.Color.Tomato;
+            this.getmes.ForeColor = System.Drawing.Color.Snow;
+            this.getmes.Location = new System.Drawing.Point(311, 53);
+            this.getmes.Name = "getmes";
+            this.getmes.Size = new System.Drawing.Size(48, 20);
+            this.getmes.TabIndex = 17;
+            // 
+            // getano
+            // 
+            this.getano.BackColor = System.Drawing.Color.Tomato;
+            this.getano.ForeColor = System.Drawing.Color.Snow;
+            this.getano.Location = new System.Drawing.Point(365, 53);
+            this.getano.Name = "getano";
+            this.getano.Size = new System.Drawing.Size(67, 20);
+            this.getano.TabIndex = 18;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Tomato;
+            this.label4.Location = new System.Drawing.Point(260, 34);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(22, 16);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Dia";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Tomato;
+            this.label5.Location = new System.Drawing.Point(311, 34);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(25, 16);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Mês";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Tomato;
+            this.label6.Location = new System.Drawing.Point(362, 32);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(26, 16);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Ano";
+            // 
             // PaginaFuturasReservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1148, 604);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.getano);
+            this.Controls.Add(this.getmes);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.getdia);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.getId);
@@ -144,7 +206,12 @@
         private System.Windows.Forms.Button bLimpar;
         private System.Windows.Forms.Button bAtualizar;
         private System.Windows.Forms.ListView listView;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox getdia;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox getmes;
+        private System.Windows.Forms.TextBox getano;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

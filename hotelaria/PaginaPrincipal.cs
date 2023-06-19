@@ -102,7 +102,8 @@ namespace hotelaria
 
         private void ControleChecking_Click(object sender, EventArgs e)
         {
-            abrirSubJanela(new PaginaLogin());
+            abrirSubJanela(new PaginaChecking());
+            esconderMenu();
         }
 
         private void bReservaVigente_Click(object sender, EventArgs e)
@@ -117,6 +118,10 @@ namespace hotelaria
             this.Close();
         }
 
-      
+        private void bReservasProximos_Click(object sender, EventArgs e)
+        {
+            esconderMenu();
+            abrirSubJanela(new PaginaFuturasReservas());
+        }
     }
 }

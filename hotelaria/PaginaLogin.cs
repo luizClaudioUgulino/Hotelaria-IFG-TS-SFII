@@ -81,8 +81,7 @@ namespace hotelaria
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                try
-                {
+               
                     connection.Open();
                     string query = "SELECT * FROM db_contas WHERE Nome_conta = '"+ username + "' AND Nome_senha = '"+ password + "'";
                     MySqlCommand command = new MySqlCommand(query, connection);
@@ -93,10 +92,7 @@ namespace hotelaria
                         return true;
                     } else { return false; }
 
-                } catch (Exception ex)
-                {
-                    return false;
-                }
+               
                
             }
         }
