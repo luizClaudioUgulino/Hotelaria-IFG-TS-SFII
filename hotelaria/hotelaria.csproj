@@ -136,6 +136,12 @@
     <Compile Include="PaginaAlterarReserva.Designer.cs">
       <DependentUpon>PaginaAlterarReserva.cs</DependentUpon>
     </Compile>
+    <Compile Include="PaginaCadastrarQuarto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaginaCadastrarQuarto.Designer.cs">
+      <DependentUpon>PaginaCadastrarQuarto.cs</DependentUpon>
+    </Compile>
     <Compile Include="PaginaCadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PaginaAlterarReserva.resx">
       <DependentUpon>PaginaAlterarReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaginaCadastrarQuarto.resx">
+      <DependentUpon>PaginaCadastrarQuarto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaginaCadastroCliente.resx">
       <DependentUpon>PaginaCadastroCliente.cs</DependentUpon>
