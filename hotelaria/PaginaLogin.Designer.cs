@@ -46,9 +46,9 @@
             this.panelLogin.Controls.Add(this.getSenha);
             this.panelLogin.Controls.Add(this.getNome);
             this.panelLogin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelLogin.Location = new System.Drawing.Point(535, 0);
+            this.panelLogin.Location = new System.Drawing.Point(647, 0);
             this.panelLogin.Name = "panelLogin";
-            this.panelLogin.Size = new System.Drawing.Size(316, 394);
+            this.panelLogin.Size = new System.Drawing.Size(316, 408);
             this.panelLogin.TabIndex = 0;
             // 
             // getBTentrar
@@ -73,7 +73,7 @@
             this.getSenha.ForeColor = System.Drawing.Color.White;
             this.getSenha.Location = new System.Drawing.Point(26, 184);
             this.getSenha.Name = "getSenha";
-            this.getSenha.Size = new System.Drawing.Size(250, 27);
+            this.getSenha.Size = new System.Drawing.Size(250, 32);
             this.getSenha.TabIndex = 2;
             this.getSenha.Text = "Senha";
             // 
@@ -105,7 +105,7 @@
             this.label1.ForeColor = System.Drawing.Color.Tomato;
             this.label1.Location = new System.Drawing.Point(21, 121);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(496, 112);
+            this.label1.Size = new System.Drawing.Size(617, 140);
             this.label1.TabIndex = 1;
             this.label1.Text = "Hotelaria Vini";
             // 
@@ -114,7 +114,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(851, 394);
+            this.ClientSize = new System.Drawing.Size(963, 408);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -122,7 +122,6 @@
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.paginaLogin_Load);
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
             this.ResumeLayout(false);

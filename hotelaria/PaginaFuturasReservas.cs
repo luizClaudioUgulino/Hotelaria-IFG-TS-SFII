@@ -21,7 +21,9 @@ namespace hotelaria
             listView.AllowColumnReorder = true;
             listView.FullRowSelect = true;
             listView.GridLines = true;
-
+            getano.MaxLength = 4;
+            getdia.MaxLength = 2;
+            getmes.MaxLength = 2;
 
             listView.Columns.Add("id_reserva", 100, HorizontalAlignment.Left);
             listView.Columns.Add("cpf", 100, HorizontalAlignment.Left);
@@ -32,10 +34,6 @@ namespace hotelaria
             CarregarDados();
         }
 
-        private void PaginaFuturasReservas_Load(object sender, EventArgs e)
-        {
-
-        }
 
 
         private void CarregarDados()
@@ -176,6 +174,15 @@ namespace hotelaria
                 return true;
             }
 
+        }
+
+        private void bLimpar_Click(object sender, EventArgs e)
+        {
+            CarregarDados();
+            getId.Clear();
+            getdia.Clear();
+            getmes.Clear();
+            getano.Clear();
         }
     }
 }

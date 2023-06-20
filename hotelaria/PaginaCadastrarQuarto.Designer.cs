@@ -43,34 +43,34 @@
             // getNumeroQ
             // 
             this.getNumeroQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.getNumeroQ.Location = new System.Drawing.Point(120, 98);
-            this.getNumeroQ.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.getNumeroQ.Location = new System.Drawing.Point(111, 42);
+            this.getNumeroQ.Margin = new System.Windows.Forms.Padding(6);
             this.getNumeroQ.Name = "getNumeroQ";
-            this.getNumeroQ.Size = new System.Drawing.Size(266, 47);
+            this.getNumeroQ.Size = new System.Drawing.Size(266, 57);
             this.getNumeroQ.TabIndex = 0;
             // 
             // getValorDiaria
             // 
-            this.getValorDiaria.Location = new System.Drawing.Point(61, 227);
-            this.getValorDiaria.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.getValorDiaria.Location = new System.Drawing.Point(44, 188);
+            this.getValorDiaria.Margin = new System.Windows.Forms.Padding(6);
             this.getValorDiaria.Name = "getValorDiaria";
-            this.getValorDiaria.Size = new System.Drawing.Size(212, 33);
+            this.getValorDiaria.Size = new System.Drawing.Size(212, 39);
             this.getValorDiaria.TabIndex = 1;
             // 
             // getNumeroMaxP
             // 
-            this.getNumeroMaxP.Location = new System.Drawing.Point(61, 346);
-            this.getNumeroMaxP.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.getNumeroMaxP.Location = new System.Drawing.Point(44, 299);
+            this.getNumeroMaxP.Margin = new System.Windows.Forms.Padding(6);
             this.getNumeroMaxP.Name = "getNumeroMaxP";
-            this.getNumeroMaxP.Size = new System.Drawing.Size(212, 33);
+            this.getNumeroMaxP.Size = new System.Drawing.Size(212, 39);
             this.getNumeroMaxP.TabIndex = 2;
             // 
             // getDetalhes
             // 
-            this.getDetalhes.Location = new System.Drawing.Point(61, 495);
-            this.getDetalhes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.getDetalhes.Location = new System.Drawing.Point(44, 401);
+            this.getDetalhes.Margin = new System.Windows.Forms.Padding(6);
             this.getDetalhes.Name = "getDetalhes";
-            this.getDetalhes.Size = new System.Drawing.Size(606, 33);
+            this.getDetalhes.Size = new System.Drawing.Size(606, 39);
             this.getDetalhes.TabIndex = 3;
             // 
             // label1
@@ -78,10 +78,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Tomato;
-            this.label1.Location = new System.Drawing.Point(56, 105);
+            this.label1.Location = new System.Drawing.Point(35, 49);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 40);
+            this.label1.Size = new System.Drawing.Size(64, 50);
             this.label1.TabIndex = 4;
             this.label1.Text = "n°";
             // 
@@ -90,23 +90,22 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Tomato;
-            this.label2.Location = new System.Drawing.Point(56, 196);
+            this.label2.Location = new System.Drawing.Point(43, 149);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 25);
+            this.label2.Size = new System.Drawing.Size(213, 33);
             this.label2.TabIndex = 5;
             this.label2.Text = "Valor da Diaria";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Tomato;
-            this.label3.Location = new System.Drawing.Point(56, 315);
+            this.label3.Location = new System.Drawing.Point(38, 260);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(288, 25);
+            this.label3.Size = new System.Drawing.Size(371, 33);
             this.label3.TabIndex = 6;
             this.label3.Text = "Numero máximo de pessoas";
             // 
@@ -115,34 +114,36 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Tomato;
-            this.label4.Location = new System.Drawing.Point(56, 464);
+            this.label4.Location = new System.Drawing.Point(43, 362);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(200, 25);
+            this.label4.Size = new System.Drawing.Size(259, 33);
             this.label4.TabIndex = 7;
             this.label4.Text = "Detalhes do quarto";
             // 
             // buttonCadastrar
             // 
-            this.buttonCadastrar.Location = new System.Drawing.Point(662, 537);
+            this.buttonCadastrar.Location = new System.Drawing.Point(564, 489);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(195, 48);
             this.buttonCadastrar.TabIndex = 8;
             this.buttonCadastrar.Text = "Cadastrar";
             this.buttonCadastrar.UseVisualStyleBackColor = true;
+            this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
             // 
             // buttonLimpar
             // 
-            this.buttonLimpar.Location = new System.Drawing.Point(876, 538);
+            this.buttonLimpar.Location = new System.Drawing.Point(765, 489);
             this.buttonLimpar.Name = "buttonLimpar";
-            this.buttonLimpar.Size = new System.Drawing.Size(195, 48);
+            this.buttonLimpar.Size = new System.Drawing.Size(237, 48);
             this.buttonLimpar.TabIndex = 9;
             this.buttonLimpar.Text = "Limpar seleção";
             this.buttonLimpar.UseVisualStyleBackColor = true;
+            this.buttonLimpar.Click += new System.EventHandler(this.buttonLimpar_Click);
             // 
             // PaginaCadastrarQuarto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1148, 598);
             this.Controls.Add(this.buttonLimpar);
@@ -158,7 +159,7 @@
             this.Font = new System.Drawing.Font("Century", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Tomato;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "PaginaCadastrarQuarto";
             this.Text = "PaginaCadastrarQuarto";
             this.ResumeLayout(false);

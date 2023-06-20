@@ -26,16 +26,12 @@ namespace hotelaria
             getSenha.Text = "0123";
         }
 
-        private void paginaLogin_Load(object sender, EventArgs e)
-        {
-
-        }
         /// <summary>
         /// Essa metodo serve para realizar conexão com banco de dados e validar entrada do usuario. 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void getBTentrar_Click(object sender, EventArgs e)
+        public void getBTentrar_Click(object sender, EventArgs e)
         {
             if (verificar()) {
                 if (ValidateLogin(getNome.Text, getSenha.Text) == true)
@@ -56,7 +52,7 @@ namespace hotelaria
         ///  Essa metado serva para verificar se duas textbox estão vazias
         /// </summary>
         /// <returns></returns>
-        private Boolean verificar()
+        public Boolean verificar()
         {
             if (String.IsNullOrEmpty(getNome.Text) || String.IsNullOrEmpty(getSenha.Text))
             {
@@ -74,7 +70,7 @@ namespace hotelaria
         /// <param name="username"></param>
         /// <param name="password"></param>
         /// <returns></returns>
-        static bool ValidateLogin(string username, string password)
+        public Boolean ValidateLogin(string username, string password)
         {
             
             string connectionString = "server=localhost;database=merceariareis;uid=root;pwd=012304";
@@ -97,7 +93,7 @@ namespace hotelaria
             }
         }
 
-        private void abrirJanela(object obj)
+        public void abrirJanela(object obj)
         {
             Application.Run(new PaginaPrincipal());
         }
