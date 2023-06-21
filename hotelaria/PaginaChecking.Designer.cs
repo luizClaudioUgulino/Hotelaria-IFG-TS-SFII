@@ -154,7 +154,6 @@
             this.buttonLimpar.TabIndex = 11;
             this.buttonLimpar.Text = "Limpar Campo";
             this.buttonLimpar.UseVisualStyleBackColor = true;
-            this.buttonLimpar.Click += new System.EventHandler(this.buttonLimpar_Click);
             // 
             // ButtonConfirmar
             // 

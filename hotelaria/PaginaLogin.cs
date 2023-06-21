@@ -17,7 +17,8 @@ namespace hotelaria
 {
     public partial class PaginaLogin : Form
     {
-        
+
+        string connectionString = "server=localhost;database=merceariareis;uid=root;pwd=012304";
         Thread thread;
         public PaginaLogin()
         {
@@ -73,7 +74,7 @@ namespace hotelaria
         public Boolean ValidateLogin(string username, string password)
         {
             
-            string connectionString = "server=localhost;database=merceariareis;uid=root;pwd=012304";
+            
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {

@@ -220,10 +220,6 @@ namespace hotelaria
             }
         }
 
-        private void buttonLimpar_Click(object sender, EventArgs e)
-        {
-            limparCampos();
-        }
 
         private void PaginaChecking_Load(object sender, EventArgs e)
         {
