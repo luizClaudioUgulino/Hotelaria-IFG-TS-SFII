@@ -17,6 +17,12 @@ namespace hotelaria
         public PaginaCadastroCliente()
         {
             InitializeComponent();
+            getCpf.MaxLength = 11;
+            getNome.MaxLength = 20;
+            getIdadeMes.MaxLength = 2;
+            getIdadeAno.MaxLength = 4;
+            getIdade.MaxLength = 2;
+            getEndN.MaxLength = 2;
         }
 
         private void buttonCadastrar_Click(object sender, EventArgs e)

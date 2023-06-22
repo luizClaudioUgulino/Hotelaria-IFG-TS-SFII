@@ -76,6 +76,49 @@ namespace hotelaria
 
         }
 
+
+        private void carregarView1()
+        {
+
+            listView.Items.Clear();
+
+            using (MySqlConnection connection = new MySqlConnection(banco))
+            {
+                string query = "SELECT * FROM reservas WHERE disponibilidade = 'aberto' and id_reserva = '" + id_reserva + "'";
+                MySqlCommand command = new MySqlCommand(query, connection);
+
+                try
+                {
+                    connection.Open();
+                    MySqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+
+                        ListViewItem item = new ListViewItem(reader["id_reserva"].ToString());
+                        item.SubItems.Add(reader["CPF_cliente"].ToString());
+                        item.SubItems.Add(reader["data_entrada"].ToString());
+                        item.SubItems.Add(reader["data_saida"].ToString());
+                        item.SubItems.Add(reader["valor_total_reserva"].ToString());
+                        item.SubItems.Add(reader["numero_quarto"].ToString());
+                        item.SubItems.Add(reader["disponibilidade"].ToString());
+
+
+                        listView.Items.Add(item);
+
+                    }
+
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ocorreu um erro: " + ex.Message);
+                }
+            }
+
+        }
+
+
         private void button2_Click(object sender, EventArgs e)
         {
             if (getid.Text != null || getid.Text != "")
@@ -86,6 +129,7 @@ namespace hotelaria
             else
             {
                 MessageBox.Show("Por favor selecionar uma das opções da tabela.");
+                button1.BackColor = Color.White;
                 carregarView();
             }
         }
@@ -106,7 +150,28 @@ namespace hotelaria
                 selectedItem = null;
                 Disponibilidade = null;
                 id_reserva = null;
+                button1.BackColor = Color.White;
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (getid.Text != "")
+            {
+                carregarView1();
+
+            }
+            else
+            {
+                MessageBox.Show("Por favor coloca id da reserva");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            getid.Clear();
+            carregarView();
+            button1.BackColor = Color.White;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -156,6 +221,15 @@ namespace hotelaria
             else
             {
                 MessageBox.Show("Por favor selecionar uma das opções da tabela.");
+            }
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica se a tecla pressionada é um número
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
     }
