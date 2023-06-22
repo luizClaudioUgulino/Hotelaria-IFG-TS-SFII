@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaginaAlterarReserva));
             this.listView = new System.Windows.Forms.ListView();
             this.label1 = new System.Windows.Forms.Label();
             this.getCpf = new System.Windows.Forms.TextBox();
@@ -47,6 +48,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.buttonAlterar = new System.Windows.Forms.Button();
             this.getConfirmar = new System.Windows.Forms.CheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // listView
@@ -258,6 +261,15 @@
             this.getConfirmar.UseVisualStyleBackColor = true;
             this.getConfirmar.CheckedChanged += new System.EventHandler(this.getConfirmar_CheckedChanged);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(226, 255);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(596, 463);
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
             // PaginaAlterarReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -282,12 +294,14 @@
             this.Controls.Add(this.getCpf);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView);
+            this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Tomato;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "PaginaAlterarReserva";
             this.Text = "PaginaAlterarReserva";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,5 +328,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button buttonAlterar;
         private System.Windows.Forms.CheckBox getConfirmar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaginaChecking));
             this.ListQuartos = new System.Windows.Forms.ListView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,10 +56,13 @@
             this.setNumero = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.saidaValorTotal = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // ListQuartos
             // 
+            this.ListQuartos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListQuartos.HideSelection = false;
             this.ListQuartos.Location = new System.Drawing.Point(440, 64);
             this.ListQuartos.Name = "ListQuartos";
@@ -95,6 +99,7 @@
             this.getIdReserva.Name = "getIdReserva";
             this.getIdReserva.Size = new System.Drawing.Size(137, 20);
             this.getIdReserva.TabIndex = 3;
+            this.getIdReserva.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // getCpf
             // 
@@ -102,6 +107,7 @@
             this.getCpf.Name = "getCpf";
             this.getCpf.Size = new System.Drawing.Size(170, 20);
             this.getCpf.TabIndex = 4;
+            this.getCpf.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // getEntradaDia
             // 
@@ -109,6 +115,8 @@
             this.getEntradaDia.Name = "getEntradaDia";
             this.getEntradaDia.Size = new System.Drawing.Size(49, 20);
             this.getEntradaDia.TabIndex = 5;
+            this.getEntradaDia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.getEntradaDia.Validating += new System.ComponentModel.CancelEventHandler(this.textBox2_Validating);
             // 
             // GetEntradaMes
             // 
@@ -116,6 +124,8 @@
             this.GetEntradaMes.Name = "GetEntradaMes";
             this.GetEntradaMes.Size = new System.Drawing.Size(43, 20);
             this.GetEntradaMes.TabIndex = 6;
+            this.GetEntradaMes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.GetEntradaMes.Validating += new System.ComponentModel.CancelEventHandler(this.textBox1_Validating);
             // 
             // getEntradaAno
             // 
@@ -123,6 +133,8 @@
             this.getEntradaAno.Name = "getEntradaAno";
             this.getEntradaAno.Size = new System.Drawing.Size(70, 20);
             this.getEntradaAno.TabIndex = 7;
+            this.getEntradaAno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.getEntradaAno.Validating += new System.ComponentModel.CancelEventHandler(this.textBox3_Validating);
             // 
             // getSaidaAno
             // 
@@ -130,6 +142,8 @@
             this.getSaidaAno.Name = "getSaidaAno";
             this.getSaidaAno.Size = new System.Drawing.Size(70, 20);
             this.getSaidaAno.TabIndex = 10;
+            this.getSaidaAno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.getSaidaAno.Validating += new System.ComponentModel.CancelEventHandler(this.textBox3_Validating);
             // 
             // getSaidaMes
             // 
@@ -144,6 +158,8 @@
             this.getSaidaDia.Name = "getSaidaDia";
             this.getSaidaDia.Size = new System.Drawing.Size(49, 20);
             this.getSaidaDia.TabIndex = 8;
+            this.getSaidaDia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.getSaidaDia.Validating += new System.ComponentModel.CancelEventHandler(this.textBox2_Validating);
             // 
             // buttonLimpar
             // 
@@ -154,6 +170,7 @@
             this.buttonLimpar.TabIndex = 11;
             this.buttonLimpar.Text = "Limpar Campo";
             this.buttonLimpar.UseVisualStyleBackColor = true;
+            this.buttonLimpar.Click += new System.EventHandler(this.buttonLimpar_Click);
             // 
             // ButtonConfirmar
             // 
@@ -314,6 +331,16 @@
             this.saidaValorTotal.TabIndex = 26;
             this.saidaValorTotal.Text = "null";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 149);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(502, 451);
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
             // PaginaChecking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -346,11 +373,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ListQuartos);
+            this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.Salmon;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PaginaChecking";
             this.Text = "PaginaChecking";
             this.Load += new System.EventHandler(this.PaginaChecking_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,5 +414,6 @@
         private System.Windows.Forms.Label setNumero;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label saidaValorTotal;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

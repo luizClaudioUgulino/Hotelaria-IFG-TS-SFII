@@ -225,5 +225,59 @@ namespace hotelaria
         {
 
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica se a tecla pressionada é um número
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox1_Validating(object sender, CancelEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+
+            // Verifica se o valor está fora do intervalo permitido
+            int valor;
+            if (!int.TryParse(textBox.Text, out valor) || valor < 1 || valor > 12)
+            {
+                textBox.Text = string.Empty; // Limpa o valor do TextBox
+                e.Cancel = true; // Cancela o evento de validação
+            }
+        }
+
+        private void textBox2_Validating(object sender, CancelEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+
+            // Verifica se o valor está fora do intervalo permitido
+            int valor;
+            if (!int.TryParse(textBox.Text, out valor) || valor < 1 || valor > 31)
+            {
+                textBox.Text = string.Empty; // Limpa o valor do TextBox
+                e.Cancel = true; // Cancela o evento de validação
+            }
+        }
+
+        private void textBox3_Validating(object sender, CancelEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+
+            // Verifica se o valor está fora do intervalo permitido
+            int valor;
+            if (!int.TryParse(textBox.Text, out valor) || valor < 2020 || valor > 2030)
+            {
+                textBox.Text = string.Empty; // Limpa o valor do TextBox
+                e.Cancel = true; // Cancela o evento de validação
+            }
+        }
+
+        private void buttonLimpar_Click(object sender, EventArgs e)
+        {
+            limparCampos();
+            CarregarDados();
+        }
     }
 }

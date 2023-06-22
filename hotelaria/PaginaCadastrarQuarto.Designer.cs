@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaginaCadastrarQuarto));
             this.getNumeroQ = new System.Windows.Forms.TextBox();
             this.getValorDiaria = new System.Windows.Forms.TextBox();
             this.getNumeroMaxP = new System.Windows.Forms.TextBox();
@@ -38,6 +39,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.buttonLimpar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // getNumeroQ
@@ -46,7 +49,7 @@
             this.getNumeroQ.Location = new System.Drawing.Point(111, 42);
             this.getNumeroQ.Margin = new System.Windows.Forms.Padding(6);
             this.getNumeroQ.Name = "getNumeroQ";
-            this.getNumeroQ.Size = new System.Drawing.Size(266, 57);
+            this.getNumeroQ.Size = new System.Drawing.Size(266, 47);
             this.getNumeroQ.TabIndex = 0;
             this.getNumeroQ.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
@@ -55,7 +58,7 @@
             this.getValorDiaria.Location = new System.Drawing.Point(44, 188);
             this.getValorDiaria.Margin = new System.Windows.Forms.Padding(6);
             this.getValorDiaria.Name = "getValorDiaria";
-            this.getValorDiaria.Size = new System.Drawing.Size(212, 39);
+            this.getValorDiaria.Size = new System.Drawing.Size(212, 33);
             this.getValorDiaria.TabIndex = 1;
             this.getValorDiaria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
@@ -64,7 +67,7 @@
             this.getNumeroMaxP.Location = new System.Drawing.Point(44, 299);
             this.getNumeroMaxP.Margin = new System.Windows.Forms.Padding(6);
             this.getNumeroMaxP.Name = "getNumeroMaxP";
-            this.getNumeroMaxP.Size = new System.Drawing.Size(212, 39);
+            this.getNumeroMaxP.Size = new System.Drawing.Size(212, 33);
             this.getNumeroMaxP.TabIndex = 2;
             this.getNumeroMaxP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             this.getNumeroMaxP.Validating += new System.ComponentModel.CancelEventHandler(this.textBox1_Validating);
@@ -74,7 +77,7 @@
             this.getDetalhes.Location = new System.Drawing.Point(44, 401);
             this.getDetalhes.Margin = new System.Windows.Forms.Padding(6);
             this.getDetalhes.Name = "getDetalhes";
-            this.getDetalhes.Size = new System.Drawing.Size(606, 39);
+            this.getDetalhes.Size = new System.Drawing.Size(606, 33);
             this.getDetalhes.TabIndex = 3;
             // 
             // label1
@@ -85,7 +88,7 @@
             this.label1.Location = new System.Drawing.Point(35, 49);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 50);
+            this.label1.Size = new System.Drawing.Size(52, 40);
             this.label1.TabIndex = 4;
             this.label1.Text = "n°";
             // 
@@ -97,7 +100,7 @@
             this.label2.Location = new System.Drawing.Point(43, 149);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(213, 33);
+            this.label2.Size = new System.Drawing.Size(165, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "Valor da Diaria";
             // 
@@ -109,7 +112,7 @@
             this.label3.Location = new System.Drawing.Point(38, 260);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(371, 33);
+            this.label3.Size = new System.Drawing.Size(288, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Numero máximo de pessoas";
             // 
@@ -121,7 +124,7 @@
             this.label4.Location = new System.Drawing.Point(43, 362);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(259, 33);
+            this.label4.Size = new System.Drawing.Size(200, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Detalhes do quarto";
             // 
@@ -145,9 +148,18 @@
             this.buttonLimpar.UseVisualStyleBackColor = true;
             this.buttonLimpar.Click += new System.EventHandler(this.buttonLimpar_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(680, 89);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(643, 507);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // PaginaCadastrarQuarto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1148, 598);
             this.Controls.Add(this.buttonLimpar);
@@ -160,12 +172,14 @@
             this.Controls.Add(this.getNumeroMaxP);
             this.Controls.Add(this.getValorDiaria);
             this.Controls.Add(this.getNumeroQ);
+            this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Century", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Tomato;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "PaginaCadastrarQuarto";
             this.Text = "PaginaCadastrarQuarto";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,5 +197,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button buttonCadastrar;
         private System.Windows.Forms.Button buttonLimpar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
