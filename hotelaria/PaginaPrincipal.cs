@@ -83,12 +83,12 @@ namespace hotelaria
         /// <param name="e"></param>
 
 
-        private void controleCadastro_Click_1(object sender, EventArgs e)
+        public void controleCadastro_Click_1(object sender, EventArgs e)
         {
             aparecerMenu(painelCadastros);
         }
 
-        private void controleReservas_Click_1(object sender, EventArgs e)
+        public void controleReservas_Click_1(object sender, EventArgs e)
         {
             aparecerMenu(painelReservas);
         }

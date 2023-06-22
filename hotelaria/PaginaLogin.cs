@@ -23,8 +23,8 @@ namespace hotelaria
         public PaginaLogin()
         {
             InitializeComponent();
-            getNome.Text = "luizugulino";
-            getSenha.Text = "0123";
+          //  getNome.Text = "luizugulino";
+          //  getSenha.Text = "0123";
             getSenha.UseSystemPasswordChar = true;
         }
 

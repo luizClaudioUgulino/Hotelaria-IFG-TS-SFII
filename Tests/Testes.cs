@@ -17,7 +17,7 @@ namespace Tests
 
         PaginaLogin pl = new PaginaLogin();
 
-        private PaginaLogin form;
+        private PaginaPrincipal form;
 
         [TestInitialize]
         public void Init()
@@ -28,7 +28,7 @@ namespace Tests
         [SetUp]
         public void SetUp()
         {
-            form = new PaginaLogin();
+            form = new PaginaPrincipal();
             form.Show(); // Exibe o formulário durante o teste
         }
 
@@ -36,6 +36,7 @@ namespace Tests
         public void TearDown()
         {
             form.Close(); // Fecha o formulário após o teste
+            form.Dispose();
         }
 
         /// <summary>
@@ -66,14 +67,14 @@ namespace Tests
         public void TesteIntegracao()
         {
 
-            Button botao = form.Controls["getBTentrar_Click"] as Button;
-            botao.PerformClick();
+            // Simula o clique no botão
+            object value = form.controleCadastro_Click_1.PerformClick();
 
-            // Chama a função que deseja testar
-            bool resultado = form.abrirJanela(obj: new PaginaPrincipal());
+            // Verifica se o resultado esperado ocorreu
+            // (pode ser uma verificação em um banco de dados, uma validação de dados, etc.)
+            Assert.IsTrue(form.getBTentrar_Click);
 
-            // Verifica o resultado da função
-            Assert.IsTrue(resultado);
+            // Outras verificações...
 
 
 
