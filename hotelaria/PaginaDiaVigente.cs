@@ -29,7 +29,7 @@ namespace hotelaria
 
 
             listView.Columns.Add("ID reserva", 100, HorizontalAlignment.Left);
-            listView.Columns.Add("CPF", 100, HorizontalAlignment.Left);
+            listView.Columns.Add("CPF", 140, HorizontalAlignment.Left);
             listView.Columns.Add("Entrada", 130, HorizontalAlignment.Left);
             listView.Columns.Add("Saida", 130, HorizontalAlignment.Left);
             listView.Columns.Add("Valor reserva", 150, HorizontalAlignment.Left);

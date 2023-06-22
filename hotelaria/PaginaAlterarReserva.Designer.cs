@@ -53,7 +53,7 @@
             // 
             this.listView.HideSelection = false;
             this.listView.Location = new System.Drawing.Point(63, 116);
-            this.listView.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.listView.Margin = new System.Windows.Forms.Padding(5);
             this.listView.Name = "listView";
             this.listView.Size = new System.Drawing.Size(1025, 266);
             this.listView.TabIndex = 0;
@@ -75,15 +75,16 @@
             // getCpf
             // 
             this.getCpf.Location = new System.Drawing.Point(54, 474);
-            this.getCpf.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.getCpf.Margin = new System.Windows.Forms.Padding(5);
             this.getCpf.Name = "getCpf";
             this.getCpf.Size = new System.Drawing.Size(164, 27);
             this.getCpf.TabIndex = 2;
+            this.getCpf.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // getEntrada
             // 
             this.getEntrada.Location = new System.Drawing.Point(228, 474);
-            this.getEntrada.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.getEntrada.Margin = new System.Windows.Forms.Padding(5);
             this.getEntrada.Name = "getEntrada";
             this.getEntrada.Size = new System.Drawing.Size(164, 27);
             this.getEntrada.TabIndex = 3;
@@ -91,7 +92,7 @@
             // getSaida
             // 
             this.getSaida.Location = new System.Drawing.Point(402, 474);
-            this.getSaida.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.getSaida.Margin = new System.Windows.Forms.Padding(5);
             this.getSaida.Name = "getSaida";
             this.getSaida.Size = new System.Drawing.Size(164, 27);
             this.getSaida.TabIndex = 4;
@@ -99,23 +100,25 @@
             // getNq
             // 
             this.getNq.Location = new System.Drawing.Point(750, 474);
-            this.getNq.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.getNq.Margin = new System.Windows.Forms.Padding(5);
             this.getNq.Name = "getNq";
             this.getNq.Size = new System.Drawing.Size(164, 27);
             this.getNq.TabIndex = 5;
+            this.getNq.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // GetValor
             // 
             this.GetValor.Location = new System.Drawing.Point(576, 474);
-            this.GetValor.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.GetValor.Margin = new System.Windows.Forms.Padding(5);
             this.GetValor.Name = "GetValor";
             this.GetValor.Size = new System.Drawing.Size(164, 27);
             this.GetValor.TabIndex = 6;
+            this.GetValor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // getAtivo
             // 
             this.getAtivo.Location = new System.Drawing.Point(924, 474);
-            this.getAtivo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.getAtivo.Margin = new System.Windows.Forms.Padding(5);
             this.getAtivo.Name = "getAtivo";
             this.getAtivo.Size = new System.Drawing.Size(164, 27);
             this.getAtivo.TabIndex = 7;
@@ -233,12 +236,13 @@
             this.buttonAlterar.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAlterar.ForeColor = System.Drawing.Color.Tomato;
             this.buttonAlterar.Location = new System.Drawing.Point(924, 545);
-            this.buttonAlterar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.buttonAlterar.Margin = new System.Windows.Forms.Padding(5);
             this.buttonAlterar.Name = "buttonAlterar";
             this.buttonAlterar.Size = new System.Drawing.Size(197, 36);
             this.buttonAlterar.TabIndex = 17;
             this.buttonAlterar.Text = "Alterar";
             this.buttonAlterar.UseVisualStyleBackColor = true;
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
             // getConfirmar
             // 
@@ -246,7 +250,7 @@
             this.getConfirmar.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.getConfirmar.ForeColor = System.Drawing.Color.Tomato;
             this.getConfirmar.Location = new System.Drawing.Point(924, 521);
-            this.getConfirmar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.getConfirmar.Margin = new System.Windows.Forms.Padding(5);
             this.getConfirmar.Name = "getConfirmar";
             this.getConfirmar.Size = new System.Drawing.Size(105, 24);
             this.getConfirmar.TabIndex = 18;
@@ -281,7 +285,7 @@
             this.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Tomato;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "PaginaAlterarReserva";
             this.Text = "PaginaAlterarReserva";
             this.ResumeLayout(false);
