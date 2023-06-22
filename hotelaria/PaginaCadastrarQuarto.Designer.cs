@@ -48,6 +48,7 @@
             this.getNumeroQ.Name = "getNumeroQ";
             this.getNumeroQ.Size = new System.Drawing.Size(266, 57);
             this.getNumeroQ.TabIndex = 0;
+            this.getNumeroQ.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // getValorDiaria
             // 
@@ -56,6 +57,7 @@
             this.getValorDiaria.Name = "getValorDiaria";
             this.getValorDiaria.Size = new System.Drawing.Size(212, 39);
             this.getValorDiaria.TabIndex = 1;
+            this.getValorDiaria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // getNumeroMaxP
             // 
@@ -64,6 +66,8 @@
             this.getNumeroMaxP.Name = "getNumeroMaxP";
             this.getNumeroMaxP.Size = new System.Drawing.Size(212, 39);
             this.getNumeroMaxP.TabIndex = 2;
+            this.getNumeroMaxP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.getNumeroMaxP.Validating += new System.ComponentModel.CancelEventHandler(this.textBox1_Validating);
             // 
             // getDetalhes
             // 

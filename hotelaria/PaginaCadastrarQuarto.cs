@@ -17,6 +17,10 @@ namespace hotelaria
         public PaginaCadastrarQuarto()
         {
             InitializeComponent();
+            getNumeroMaxP.MaxLength = 2;
+            getDetalhes.MaxLength = 50;
+            getNumeroQ.MaxLength = 3;
+            getValorDiaria.MaxLength = 5;
         }
         private void buttonLimpar_Click(object sender, EventArgs e)
         {
@@ -90,6 +94,27 @@ namespace hotelaria
                 MessageBox.Show(" Por favor preencher todos os dados com *.", "MENSAGEM", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
+        }
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica se a tecla pressionada é um número
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox1_Validating(object sender, CancelEventArgs e)
+        {
+            TextBox textBox = (TextBox)sender;
+
+            // Verifica se o valor está fora do intervalo permitido
+            int valor;
+            if (!int.TryParse(textBox.Text, out valor) || valor < 1 || valor > 12)
+            {
+                textBox.Text = string.Empty; // Limpa o valor do TextBox
+                e.Cancel = true; // Cancela o evento de validação
+            }
         }
     }
 }
