@@ -28,12 +28,12 @@ namespace hotelaria
             listView.GridLines = true;
 
 
-            listView.Columns.Add("id_reserva", 100, HorizontalAlignment.Left);
-            listView.Columns.Add("cpf", 100, HorizontalAlignment.Left);
+            listView.Columns.Add("ID reserva", 100, HorizontalAlignment.Left);
+            listView.Columns.Add("CPF", 100, HorizontalAlignment.Left);
             listView.Columns.Add("Entrada", 130, HorizontalAlignment.Left);
-            listView.Columns.Add("saida", 130, HorizontalAlignment.Left);
-            listView.Columns.Add("valor reserva", 100, HorizontalAlignment.Left);
-            listView.Columns.Add("numero quarto", 100, HorizontalAlignment.Left);
+            listView.Columns.Add("Saida", 130, HorizontalAlignment.Left);
+            listView.Columns.Add("Valor reserva", 150, HorizontalAlignment.Left);
+            listView.Columns.Add("Numero do quarto", 170, HorizontalAlignment.Left);
             CarregarDados();
         }
 

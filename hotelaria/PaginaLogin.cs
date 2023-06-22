@@ -25,6 +25,7 @@ namespace hotelaria
             InitializeComponent();
             getNome.Text = "luizugulino";
             getSenha.Text = "0123";
+            getSenha.UseSystemPasswordChar = true;
         }
 
         /// <summary>
