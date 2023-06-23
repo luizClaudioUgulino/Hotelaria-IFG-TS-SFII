@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -182,6 +183,48 @@ namespace hotelaria
             }
         }
 
+
+        public Boolean carregarViewVerificar()
+        {
+
+            listView.Items.Clear();
+
+            using (MySqlConnection connection = new MySqlConnection(banco))
+            {
+                string query = "SELECT * FROM reservas";
+                MySqlCommand command = new MySqlCommand(query, connection);
+
+                try
+                {
+                    connection.Open();
+                    MySqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+
+                        ListViewItem item = new ListViewItem(reader["id_reserva"].ToString());
+                        item.SubItems.Add(reader["CPF_cliente"].ToString());
+                        item.SubItems.Add(reader["data_entrada"].ToString());
+                        item.SubItems.Add(reader["data_saida"].ToString());
+                        item.SubItems.Add(reader["valor_total_reserva"].ToString());
+                        item.SubItems.Add(reader["numero_quarto"].ToString());
+                        item.SubItems.Add(reader["disponibilidade"].ToString());
+                        listView.Items.Add(item);
+                       
+
+                    }
+
+                    reader.Close();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ocorreu um erro: " + ex.Message);
+                    return false;
+                }
+            }
+
+        }
 
     }
 }
