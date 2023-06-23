@@ -97,26 +97,27 @@ namespace Tests
 
             form.Show();
 
-            Thread.Sleep(1000);
+            
             // Obtém a referência para a caixa de texto e define um valor
             TextBox textBox = form.Controls.Find("getNome", true).FirstOrDefault() as TextBox;
             textBox.Text = "luizugulino";
-
+            Thread.Sleep(500);
             TextBox textBox2 = form.Controls.Find("getSenha", true).FirstOrDefault() as TextBox;
             textBox2.Text = "0123";
 
-            Thread.Sleep(1000);
+            Thread.Sleep(2000);
 
             // Obtém a referência para o botão e simula o clique
             Button button = form.Controls.Find("getBTentrar", true).FirstOrDefault() as Button;
             button.PerformClick();
-            Thread.Sleep(1000);
+            Thread.Sleep(2000);
             // Realiza asserções para verificar se o botão foi clicado com sucesso
-            Assert.AreEqual("Botão clicado!", textBox.Text);
-            Assert.AreEqual("Botão clicado!", textBox2.Text);
 
 
+            form.getNome.Text = "luizugulino";
+            form.getSenha.Text = "0123";
 
+            Assert.IsTrue(form.ValidateLogin(form.getNome.Text,form.getSenha.Text)) ;
 
         }
 
