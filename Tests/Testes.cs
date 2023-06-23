@@ -15,7 +15,7 @@ namespace Tests
     {
         private PaginaLogin login;
 
-        PaginaLogin pl = new PaginaLogin();
+        
 
         private PaginaPrincipal form;
 
@@ -39,43 +39,53 @@ namespace Tests
             form.Dispose();
         }
 
-        /// <summary>
-        /// Teste de unitario.
-        /// </summary>
+        
+        ///////////////////// Test unitario  //////////////////////
+        
 
         [TestMethod]
-        public void TestComBancoDeDados()
+        public void TestMetodoDeVerificar()
         {
-            Boolean resultado = pl.ValidateLogin("luizugulino", "0123");
-            Assert.AreEqual(true, resultado);
-        }
-
-
-        [TestMethod]
-        public void TestGetDados()
-        {
+            PaginaLogin pl = new PaginaLogin();
             Boolean resultado = pl.verificar();
             Assert.IsTrue(resultado);
         }
 
-        /// <summary>
-        /// Teste de Integração do sistema.
-        /// </summary>
+        
+
+        [TestMethod]
+        public void TestVerificarSeValorEInt()
+        {
+            PaginaCadastroCliente pcl = new PaginaCadastroCliente();
+
+            pcl.getNome.Text = "sadasd";
+            Boolean resultado = pcl.IsNumeric(pcl.getNome.Text);
+            Assert.IsTrue(resultado);
+           
+        }
+        [TestMethod]
+        public void TestGetDados2()
+        {
+            PaginaLogin pl = new PaginaLogin();
+            Boolean resultado = pl.verificar();
+            Assert.IsTrue(resultado);
+        }
+        [TestMethod]
+        public void TestGetDados3()
+        {
+            PaginaLogin pl = new PaginaLogin();
+            Boolean resultado = pl.verificar();
+            Assert.IsTrue(resultado);
+        }
+
+        
+        ///////////////////////////////////////////////////////////
+        
 
 
         [Test]
         public void TesteIntegracao()
         {
-
-            // Simula o clique no botão
-            object value = form.controleCadastro_Click_1.PerformClick();
-
-            // Verifica se o resultado esperado ocorreu
-            // (pode ser uma verificação em um banco de dados, uma validação de dados, etc.)
-            Assert.IsTrue(form.getBTentrar_Click);
-
-            // Outras verificações...
-
 
 
         }

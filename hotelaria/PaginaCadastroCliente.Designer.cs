@@ -340,8 +340,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox getNome;
         private System.Windows.Forms.TextBox getCpf;
         private System.Windows.Forms.TextBox getIdade;
         private System.Windows.Forms.TextBox getIdadeMes;
@@ -367,5 +365,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.TextBox getNome;
     }
 }

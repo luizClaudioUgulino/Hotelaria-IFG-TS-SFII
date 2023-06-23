@@ -96,7 +96,7 @@ namespace hotelaria
 
         }
 
-        private void limparCaixas()
+        public void limparCaixas()
         {
 
             getNome.Clear();
@@ -115,6 +115,17 @@ namespace hotelaria
         private void buttonLimpar_Click(object sender, EventArgs e)
         {
             limparCaixas();
+        }
+
+        public bool IsNumeric(string input)
+        {
+            bool isNumeric = double.TryParse(input, out _);
+            return isNumeric;
+        }
+        public bool IsInteger(string input)
+        {
+            bool isInteger = int.TryParse(input, out _);
+            return isInteger;
         }
     }
 }

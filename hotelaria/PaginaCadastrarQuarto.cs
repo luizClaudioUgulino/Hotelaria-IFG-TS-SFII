@@ -116,5 +116,26 @@ namespace hotelaria
                 e.Cancel = true; // Cancela o evento de validação
             }
         }
+
+        public bool ValidarEntradaDoParametros(int param1, int param2, int param3, string param4)
+        {
+            bool areValid = true;
+
+            // Verifica se param1, param2 e param3 são do tipo int
+            if (!(param1 is int) || !(param2 is int) || !(param3 is int))
+            {
+                areValid = false;
+            }
+
+            // Verifica se param4 é do tipo string
+            if (!(param4 is string))
+            {
+                areValid = false;
+            }
+
+            return areValid;
+        }
+        
+
     }
 }

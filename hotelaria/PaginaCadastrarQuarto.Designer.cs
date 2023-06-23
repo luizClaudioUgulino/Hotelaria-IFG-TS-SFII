@@ -186,11 +186,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox getNumeroQ;
-        private System.Windows.Forms.TextBox getValorDiaria;
-        private System.Windows.Forms.TextBox getNumeroMaxP;
-        private System.Windows.Forms.TextBox getDetalhes;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -198,5 +193,9 @@
         private System.Windows.Forms.Button buttonCadastrar;
         private System.Windows.Forms.Button buttonLimpar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.TextBox getNumeroQ;
+        public System.Windows.Forms.TextBox getValorDiaria;
+        public System.Windows.Forms.TextBox getNumeroMaxP;
+        public System.Windows.Forms.TextBox getDetalhes;
     }
 }
